@@ -4,7 +4,9 @@ var winnerCounterCross = 0;
 var bracketCounter0 = "";
 var bracketCounter1 = "";
 
-console.log(winnerCounterHead, winnerCounterCross)
+// document.getElementById("btn2").addEventListener("click", function(){
+//   console.log(winnerCounterHead, winnerCounterCross);
+// });
 
 btn.addEventListener("click" ,function() {
   var numR = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
@@ -37,7 +39,7 @@ btn.addEventListener("click" ,function() {
         document.getElementById("leader").innerHTML = "Sta vincendo Croce!";
     }
 
-    if (parseInt(winnerCounterHead) + parseInt(winnerCounterCross) >= 25){
+    if (parseInt(winnerCounterHead) + parseInt(winnerCounterCross) >= 20){
       alert("Ti stai divertendo vero? :)")
     }
 });
